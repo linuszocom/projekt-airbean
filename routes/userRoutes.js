@@ -32,7 +32,7 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  const { name, email } = req.body;
+  const { namee, email } = req.body;
 
   if (!name || !email) {
     return res.status(400).json({ fel: "Name och email krävs" });
